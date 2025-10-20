@@ -1,0 +1,36 @@
+@startuml Swedbank_GAI_Sequence
+title Sequence: Chat Log → RAG → Requirement → Audit
+
+actor "Swedbank Analyst" as Analyst
+participant Portal
+participant API
+participant Embedder
+participant Index
+participant RAG
+participant LLM
+participant Classifier
+participant Validator
+participant Repo
+participant Compliance
+
+Analyst -> Portal : Upload anonymized chat logs
+Portal -> API : POST /generateRequirements
+API -> Embedder : create_embeddings()
+Embedder -> Index : store/query(top-k)
+Index --> RAG : return relevant context
+RAG -> LLM : compose_prompt(user_query + context)
+LLM --> RAG : generated_text(requirements)
+RAG --> API : return generated_text
+API -> Classifier : classify(FR/NFR)
+Classifier --> API : label
+API -> Validator : check_traceability()
+Validator --> API : validation_report
+API -> Repo : save(requirements, validation, labels)
+Repo -> Compliance : log_transaction()
+API --> Portal : display(requirements + provenance + confidence)
+Analyst -> Portal : approve / edit / reject
+Portal -> API : feedback()
+API -> LLM : update_prompt/weight (via Trainer)
+Compliance --> Analyst : audit trail confirmation
+
+@enduml

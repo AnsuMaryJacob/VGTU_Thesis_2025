@@ -1,0 +1,49 @@
+@startuml Swedbank_GAI_Class
+title Swedbank AI-RES Core Domain Classes
+
+class ChatLog {
+  +logId: UUID
+  +customerId: String
+  +text: String
+  +timestamp: DateTime
+}
+
+class DocumentChunk {
+  +chunkId: UUID
+  +text: String
+  +embeddingVector: float[]
+  +sourceLogId: UUID
+}
+
+class Requirement {
+  +reqId: UUID
+  +text: String
+  +type: Enum{FR, NFR}
+  +confidence: float
+  +provenance: List<chunkId>
+  +status: Enum{Draft, Validated, Approved}
+}
+
+class ValidationReport {
+  +reportId: UUID
+  +reqId: UUID
+  +hallucinationScore: float
+  +retrievalPrecision: float
+  +issues: String[]
+}
+
+class Feedback {
+  +fbId: UUID
+  +reqId: UUID
+  +analystId: UUID
+  +decision: Enum{Accept, Reject, Edit}
+  +comment: String
+}
+
+ChatLog "1" --> "0..*" DocumentChunk : segmented into
+DocumentChunk "1" --> "0..*" Requirement : supports
+Requirement "1" --> "1" ValidationReport : validated by
+Requirement "0..*" --> "0..*" Feedback : receives
+Feedback --> Requirement : updates status
+
+@enduml

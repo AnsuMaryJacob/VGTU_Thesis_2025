@@ -1,0 +1,24 @@
+@startuml Swedbank_GAI_Activity
+title Activity: AI-Enabled Requirement Extraction
+
+start
+:Collect chat transcripts from Swedbank Data Lake;
+:Anonymize and clean text;
+:Send query or document to AI-RES API;
+:Compute embeddings (Sentence-BERT);
+:Retrieve top-k chunks from FAISS Index;
+:Compose prompt with context;
+:Call LLM (FLAN-T5/Azure) to generate requirement draft;
+:Classify requirement type (FR/NFR);
+:Validate and check hallucination;
+if (Validation passed?) then (yes)
+  :Store in SRS Repository;
+  :Send to Compliance Log;
+else (no)
+  :Flag for manual review;
+endif
+:Display results to Analyst in Portal;
+:Collect feedback / approval;
+:Update Index & retrain prompt templates;
+stop
+@enduml

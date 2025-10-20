@@ -1,0 +1,50 @@
+@startuml
+title Swedbank AI-Enabled Requirement Engineering System – Component View
+
+package "Swedbank Digital Services" {
+  [Customer Support Chatbot] as Chatbot
+  [Core Banking System] as CoreBank
+  [Incident & Ticket Portal] as TicketPortal
+  [Swedbank Data Lake] as DataLake
+}
+
+package "AI-Enabled Requirement Engineering System (AI-RES)" {
+  [Frontend Portal] as Portal
+  [API Gateway] as API
+  [RAG Engine] as RAG
+  [Sentence-BERT Embedder] as Embedder
+  [FAISS Index] as Index
+  [LLM - FLAN-T5 / Azure OpenAI] as LLM
+  [Requirement Classifier (FR/NFR)] as Classifier
+  [Requirement Validator] as Validator
+  [Requirement Repository (SRS DB)] as Repo
+  [Feedback & Learning Service] as Trainer
+}
+
+package "Swedbank Enterprise Services" {
+  [Authentication & RBAC] as Auth
+  [Compliance / Audit Logs] as Audit
+  [Data Anonymizer] as Anonymizer
+}
+
+'--- Interconnections
+Chatbot --> DataLake : store chat logs
+DataLake --> Anonymizer : provide cleaned text
+Anonymizer --> API : send anonymized data / requirements inputs
+
+Portal --> API : submit queries / documents
+API --> Embedder : compute embeddings
+Embedder --> Index : store/retrieve embeddings
+API --> RAG : retrieve relevant context
+RAG --> LLM : send prompt (query + context)
+LLM --> API : return generated requirement text
+API --> Classifier : label FR/NFR
+API --> Validator : validate requirement
+Validator --> Repo : save validated requirement
+API --> Portal : show results
+Portal --> Trainer : collect feedback
+Trainer --> Index : update embeddings
+Trainer --> LLM : refine prompt template
+Repo --> Audit : report compliance data
+Auth --> API : authorization
+@enduml
