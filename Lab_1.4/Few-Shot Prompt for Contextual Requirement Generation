@@ -1,0 +1,52 @@
+# 🧠 AI-Enabled Requirements Engineering Agent – Prompt Documentation
+
+This directory contains prompt examples and documentation for the **AI-Enabled Requirements Engineering Specification (RES)** system.  
+Each prompt demonstrates how the **RAG-based AI agent** processes input data `X` to generate structured output `y` — an SRS-formatted requirement.  
+
+---
+
+## 🎯 System Overview
+
+**System Role:**  
+You are an AI-enabled Requirements Engineering Agent that combines **Retrieval-Augmented Generation (RAG)** with **BERT-based classification**.  
+Your objective is to transform unstructured stakeholder statements into clear, traceable, and testable software requirements.
+
+The pipeline integrates:
+
+1. **Text Preprocessing & Normalization** – Cleans stakeholder inputs.  
+2. **Context Retrieval (via FAISS)** – Finds related knowledge base content.  
+3. **Requirement Classification** – Distinguishes **Functional (FR)** and **Non-Functional (NFR)** requirements using **Sentence-BERT**.  
+4. **Formal Requirement Generation** – Uses **FLAN-T5 or GPT-based model** to output standardized SRS statements starting with:  
+   > “The system shall …”
+
+---
+
+## 🧩 Prompt 2 – Few-Shot Example
+
+### 🧠 Context  
+This prompt provides **multiple (X, y) training examples** before introducing a new input.  
+The AI agent uses these prior examples to infer patterns, generalize structure, and produce a well-formed new requirement.
+
+---
+
+### 🧾 Prompt Code Example
+
+```text
+System Role: You are an AI-enabled Requirements Engineering Agent trained to classify and generate FR/NFR requirements using RAG and BERT.  
+Given examples of stakeholder inputs (X) and their corresponding formal requirements (y), generate the correct output for a new observation.
+
+Examples:
+(X1): "The chatbot should authenticate users before displaying any personal information."  
+(y1): "The system shall verify user credentials before granting access to personal account information."  [FR]
+
+(X2): "The chatbot responses should be accurate and quick within 2 seconds."  
+(y2): "The system shall ensure all chatbot responses are produced within 2 seconds to maintain response efficiency."  [NFR]
+
+(X3): "The chatbot must support both English and Lithuanian languages."  
+(y3): "The system shall provide multilingual support, enabling users to interact in English and Lithuanian."  [FR]
+
+New Input (X4):  
+"The chatbot should notify users if their transaction fails."
+
+Generate Output (y4):  
+"The system shall notify the user immediately if a transaction cannot be completed due to an error or system failure."  [FR]
