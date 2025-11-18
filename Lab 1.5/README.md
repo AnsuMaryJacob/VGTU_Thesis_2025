@@ -22,19 +22,36 @@ Your objective is to transform unstructured stakeholder statements into clear, t
 | Requirement Classification (BERT)**  | Distinguishes **Functional (FR)** vs. **Non-Functional (NFR)** requirements using a Sentence-BERT classifier. |
 | Formal Requirement Generation**      | Generates standardized SRS statements starting with: *“The system shall …”* using FLAN-T5 or Gemini.          |
 
+## ⚙️ Notebook
+Link to Colab document: https://colab.research.google.com/drive/1S8p5KFxncKA7-6nimLjC7yFckin23lNQ#scrollTo=R-qt8A-MvCfg
 
 ## 🛠️ Technology Stack ===============================
 
 Language: Python 3
 
-LLM: Google Gemini (gemini-1.5-pro-latest or similar)
+LLM (Generation & Reasoning) : Google Gemini 1.5 Pro → Used in your Colab notebook to generate SRS requirements.
 
-Core Libraries:
-google-generativeai: For interacting with the Gemini API.
+Requirement Classification
 
-python-dotenv: For managing environment variables (like API keys).
+Sentence-BERT (SBERT) : Used to classify requirements into FR / NFR.
 
-tabulate: For formatting and displaying metric tables.
+Text Generation
+
+FLAN-T5 or GPT-based models (optional local models) : Converts structured features into formal requirement statements.
+
+Retrieval-Augmented Generation (RAG) Layer
+
+FAISS (Facebook AI Similarity Search) : Vector store for fast semantic search.Retrieves similar statements or domain knowledge.
+
+Sentence-BERT Embeddings : Used to encode stakeholder inputs and knowledge base entries.
+
+Data & Storage
+
+Knowledge Base for Domain Context (Banking/Chatbot domain) : Stored as text files, JSON, or CSV, Embedded using SBERT
+
+Vector Store (FAISS Index) : Stores document embeddings for fast retrieval.
+
+Local Dataset: Raw stakeholder inputs, Annotated FR/NFR classification files, Sample SRS outputs
 
 ## 📈 Summary and Reflection
 # 🧭 Reflection
