@@ -25,7 +25,7 @@ Your objective is to transform unstructured stakeholder statements into clear, t
 ## ⚙️ Notebook
 Link to Colab document: https://colab.research.google.com/drive/1S8p5KFxncKA7-6nimLjC7yFckin23lNQ#scrollTo=R-qt8A-MvCfg
 
-## 🛠️ Technology Stack ===============================
+## 🛠️ Technology Stack
 
 Language: Python 3
 
