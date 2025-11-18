@@ -2,7 +2,7 @@
 
 This directory contains prompt examples and implementation notes for the AI-Enabled Requirements Engineering Specification (RES) system.Each prompt demonstrates how the RAG-based AI agent processes input data X (stakeholder statement) to generate a structured output y (SRS-formatted requirement).
 
-## ✨ Key Features=================================
+## ✨ Key Features
 
 - Uses Retrieval-Augmented Generation (RAG) logic with prompt-based reasoning.  
 - Demonstrates both **Zero-Shot** and **Few-Shot** prompt engineering techniques.  
@@ -17,10 +17,10 @@ Your objective is to transform unstructured stakeholder statements into clear, t
 ## ⚙️ Pipeline Components
 | Stage                                     | Description                                                                                                   |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **1. Text Preprocessing & Normalization** | Cleans and standardizes stakeholder inputs.                                                                   |
-| **2. Context Retrieval (via FAISS)**      | Finds relevant content from a domain knowledge base (e.g., banking/chatbot dataset).                          |
-| **3. Requirement Classification (BERT)**  | Distinguishes **Functional (FR)** vs. **Non-Functional (NFR)** requirements using a Sentence-BERT classifier. |
-| **4. Formal Requirement Generation**      | Generates standardized SRS statements starting with: *“The system shall …”* using FLAN-T5 or Gemini.          |
+| Text Preprocessing & Normalization** | Cleans and standardizes stakeholder inputs.                                                                   |
+| Context Retrieval (via FAISS)**      | Finds relevant content from a domain knowledge base (e.g., banking/chatbot dataset).                          |
+| Requirement Classification (BERT)**  | Distinguishes **Functional (FR)** vs. **Non-Functional (NFR)** requirements using a Sentence-BERT classifier. |
+| Formal Requirement Generation**      | Generates standardized SRS statements starting with: *“The system shall …”* using FLAN-T5 or Gemini.          |
 
 
 ## 🛠️ Technology Stack ===============================
