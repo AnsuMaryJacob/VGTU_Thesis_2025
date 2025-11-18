@@ -29,7 +29,7 @@ Link to Colab document: https://colab.research.google.com/drive/1S8p5KFxncKA7-6n
 
 Language: Python 3
 
-LLM (Generation & Reasoning) : Google Gemini 1.5 Pro → Used in your Colab notebook to generate SRS requirements.
+LLM (Generation & Reasoning) : Google Gemini 2.5 Pro → Used in your Colab notebook to generate SRS requirements.
 
 Requirement Classification
 
