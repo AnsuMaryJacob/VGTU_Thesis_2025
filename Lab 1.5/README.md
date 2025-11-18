@@ -17,10 +17,10 @@ Your objective is to transform unstructured stakeholder statements into clear, t
 ## ⚙️ Pipeline Components
 | Stage                                     | Description                                                                                                   |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Text Preprocessing & Normalization** | Cleans and standardizes stakeholder inputs.                                                                   |
-| Context Retrieval (via FAISS)**      | Finds relevant content from a domain knowledge base (e.g., banking/chatbot dataset).                          |
-| Requirement Classification (BERT)**  | Distinguishes **Functional (FR)** vs. **Non-Functional (NFR)** requirements using a Sentence-BERT classifier. |
-| Formal Requirement Generation**      | Generates standardized SRS statements starting with: *“The system shall …”* using FLAN-T5 or Gemini.          |
+| Text Preprocessing & Normalization | Cleans and standardizes stakeholder inputs.                                                                   |
+| Context Retrieval (via FAISS)      | Finds relevant content from a domain knowledge base (e.g., banking/chatbot dataset).                          |
+| Requirement Classification (BERT)  | Distinguishes **Functional (FR)** vs. **Non-Functional (NFR)** requirements using a Sentence-BERT classifier. |
+| Formal Requirement Generation      | Generates standardized SRS statements starting with: *“The system shall …”* using FLAN-T5 or Gemini.          |
 
 ## ⚙️ Notebook
 Link to Colab document: https://colab.research.google.com/drive/1S8p5KFxncKA7-6nimLjC7yFckin23lNQ#scrollTo=R-qt8A-MvCfg
