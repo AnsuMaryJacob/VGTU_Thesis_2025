@@ -42,3 +42,25 @@ LLM (Gemini API) → Structured Functional Requirements (FR)
 Link to Colab document: https://colab.research.google.com/drive/1hB2iisWrEnPLvMhLpHevG5aZtengMLyw#scrollTo=p4xe5-0nYfw_
 - **Batch embedding generation** for scalability
 - **Colab-ready notebook** with step-by-step demonstration
+
+## 📝 Summary & Reflection
+
+### Summary
+This lab demonstrates a **RAG-enhanced Functional Requirement (FR) extraction system** using Sentence-BERT embeddings, ChromaDB vector storage, and the Gemini API for LLM processing. The system:
+
+- Accepts unstructured stakeholder inputs (user stories, interviews, use cases)  
+- Encodes inputs and 1,000+ training examples into semantic embeddings  
+- Stores embeddings in ChromaDB for fast, similarity-based retrieval  
+- Retrieves the top-3 semantically similar examples for each new input  
+- Constructs an augmented prompt with examples for the Gemini API  
+- Generates structured, traceable, and testable functional requirements  
+
+### Reflection
+- **Improved Accuracy:** RAG retrieval provides context, increasing confidence and reducing hallucinations in FR generation.  
+- **Domain Adaptation:** Semantic search ensures outputs use correct domain-specific terminology (e.g., healthcare compliance terms).  
+- **Consistency & Traceability:** Augmented prompts guide the LLM to produce FRs following the same format as examples, improving traceability to source data.  
+- **Scalability:** The system can handle thousands of examples; adding more examples continuously improves performance without retraining the LLM.  
+- **Insights:** RAG integration transformed the system from generic LLM outputs to a **domain-aware assistant**, capable of producing high-quality, structured software requirements suitable for real-world use.  
+- **Challenges:** Managing metadata for ChromaDB (lists → strings) and handling batch embeddings to prevent memory overload were critical for smooth execution.  
+
+> Overall, the lab illustrates the value of combining **semantic search with LLMs** to create a practical, reliable, and domain-aware AI requirements engineering tool.
