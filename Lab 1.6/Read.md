@@ -25,3 +25,16 @@ Augmented Prompt Construction
   ↓
 LLM (Gemini API) → Structured Functional Requirements (FR)
 
+
+- Semantic retrieval finds the most relevant examples in the database to guide the LLM.
+- Augmented prompts reduce hallucinations and improve domain-specific terminology usage.
+
+---
+
+## ⚡ Features
+
+- **Context-aware FR generation** using RAG
+- **Domain adaptation** for healthcare, finance, e-commerce, etc.
+- **Traceability and compliance tagging** (HIPAA, HL7, safety rules)
+- **Batch embedding generation** for scalability
+- **Colab-ready notebook** with step-by-step demonstration
