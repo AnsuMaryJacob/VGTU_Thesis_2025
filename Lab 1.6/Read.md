@@ -36,5 +36,9 @@ LLM (Gemini API) → Structured Functional Requirements (FR)
 - **Context-aware FR generation** using RAG
 - **Domain adaptation** for healthcare, finance, e-commerce, etc.
 - **Traceability and compliance tagging** (HIPAA, HL7, safety rules)
+
+
+## ⚙️ Notebook
+Link to Colab document: https://colab.research.google.com/drive/1hB2iisWrEnPLvMhLpHevG5aZtengMLyw#scrollTo=p4xe5-0nYfw_
 - **Batch embedding generation** for scalability
 - **Colab-ready notebook** with step-by-step demonstration
