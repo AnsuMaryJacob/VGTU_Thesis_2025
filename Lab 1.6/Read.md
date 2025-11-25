@@ -15,13 +15,13 @@ The system integrates:
 
 ## 🎯 System Architecture
 
-User Input Document → 
+User Input Document 
   ↓
-Semantic Retrival (ChromeDB) → 
+Semantic Retrival (ChromeDB) 
   ↓
-Retrieve Top-3 Most Similar Examples → 
+Retrieve Top-3 Most Similar Examples 
   ↓
-Augmented Prompt Construction → 
+Augmented Prompt Construction 
   ↓
 LLM (Gemini API) → Structured Functional Requirements (FR)
 
