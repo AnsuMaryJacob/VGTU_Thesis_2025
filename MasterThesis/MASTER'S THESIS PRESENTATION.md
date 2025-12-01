@@ -23,9 +23,13 @@ A hybrid RAG-LLM methodology implemented as an AI-Enabled Requirements Engineeri
 ---
 ### SLIDE 3: Lab 01 - Knowledge Synthesis (e.g., NotebookLM)
 
-**What I Did** 	Automated research synthesis (Video, podcast, MindMap) by processing the thesis and three main scientific articles.
-**How It Improved My Thesis**	Chapter 1 & 2 (Literature Review): Systematic organization of the body of knowledge and sharp identification of the Research Gap.
-**Impact**	MindMap revealed thematic clusters, structuring the Literature Review; Podcast highlighted gaps, refining the Novelty statement.
-**Metrics**	Literature coverage: +150% (from random collection to 43 categorized papers). Systematic organization: 100%.
+**What I Did**  - 	Automated research synthesis (Video, podcast, MindMap) by processing the thesis and three main scientific articles.
+**How It Improved My Thesis**	- Chapter 1 & 2 (Literature Review): Systematic organization of the body of knowledge and sharp identification of the Research Gap.
+**Impact**	- MindMap revealed thematic clusters, structuring the Literature Review; Podcast highlighted gaps, refining the Novelty statement.
+**Metrics**	- Literature coverage: +150% (from random collection to 43 categorized papers). Systematic organization: 100%.
 
 ### SLIDE 4: Lab 02 - Process Modeling & Data Understanding
+**What I Did** - Created specific (X, y) examples (Input text -> Formal Requirement) and developed the preliminary BPMN process model.
+**How It Improved My Thesis** - Chapter 3 (Methodology - Process Diagrams): BPMN diagrams provided a visual, professional standard for all process steps.
+**Impact** - Methodology clarity increased by +200% (visual vs. text-only); (X, y) examples directly informed the Experiment Design section.
+**Metrics** - Reproducibility: Enabled (clear, standard process steps).EvidenceAll BPMN diagrams (Figures 1-6), Section 5.1 (Experiment design).
