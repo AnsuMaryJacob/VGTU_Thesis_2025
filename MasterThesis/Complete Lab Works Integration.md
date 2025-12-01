@@ -33,5 +33,17 @@ Retrieval-Augmented Generation (RAG)   →    Generating dependable explanations
 - The proposed areas (Predictive Quality, Anomaly Detection, Process Mining) represent high-value, research-worthy extensions to your novel approach.
 
 ## LAB 03: UML System Design and GAI Integration
+- Identified  a firm : A retail Babk (swedbank lithuania)
+- Created UML diagrams using PlantUML + LLM assistance:
+  * Class Diagram
+  * Component Diagram
+  * Sequence Diagram
+  * Activity Diagram
+- Showed GAI integration architecture
 
+### Key Contributions to Your Thesis
+- The thesis now promises practical benefits for the bank, such as automated requirement extraction from chat logs, improved compliance traceability, and faster drafting of the Software Requirements Specification (SRS).
+- The Sequence Diagram and Activity Diagram provide a step-by-step methodology for the system's operation, from collecting chat transcripts and anonymizing text to the final storage in the SRS Repository.
+- The Requirement class includes the attribute provenance (a list of chunkIds), solidifying how the solution maintains traceability back to the raw stakeholder input.
+- 
  
