@@ -13,10 +13,11 @@
 - Defining the Problem Statement and Research Gap :- The sources explicitly highlight the core problem your thesis must address: the difficulty of specifying requirements for probabilistic AI/ML models and the need for new methods to achieve explainability.
 - Structuring the Literature Review :- The systematic mapping provides a natural way to organize your Literature Review chapter.
 - Providing Technical Components for Your Approach :- The sources give you specific, cutting-edge AI techniques to incorporate into the design of your novel approach.
-  | Technique                        | Source Context                          | Thesis Integration Role                                                                                 |
-|----------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Transformer Models (e.g., BERT)  | Automated NFR Classification           | Foundation: Supports automated reading and structuring of textual requirements.                        |
-| Knowledge Graphs (KG)            | Multimodal data fusion for diagnosis   | Structure: Provides a formal, traceable, and interconnected model for requirements, constraints, and design rationale. |
-| Retrieval-Augmented Generation (RAG) | Generating dependable explanations     | Verification & Explanation: Ensures system output (requirements, documentation, rationale) is grounded in authoritative sources, boosting reliability and meeting the need for explainability. |
+| Technique | Source Context | Thesis Integration Role |
+|-----------|----------------|------------------------|
+| Transformer Models (e.g., BERT) | Automated NFR Classification | Foundation: Supports automated reading and structuring of textual requirements. |
+| Knowledge Graphs (KG) | Multimodal data fusion for diagnosis | Structure: Provides a formal, traceable, and interconnected model for requirements, constraints, and design rationale. |
+| Retrieval-Augmented Generation (RAG) | Generating dependable explanations | Verification & Explanation: Ensures system output (requirements, documentation, rationale) is grounded in authoritative sources, boosting reliability and meeting the need for explainability. |
+
 
  
