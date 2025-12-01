@@ -59,13 +59,26 @@ A hybrid RAG-LLM methodology implemented as an AI-Enabled Requirements Engineeri
 - Metrics -	Faithfulness: 0.927; Overall Quality Score: 0.697 (Good quality tier).
 
 ### Slide 9: Overall Impact of Labs 1–6
-- Integration Across Labs:
+ Integration Across Labs:
 
-Lab 1–2: Structured literature + process modeling.
-Lab 3–4: System architecture + AI agent design.
-Lab 5–6: End-to-end pipeline + evaluation metrics.
+- Lab 1–2: Structured literature + process modeling.
+- Lab 3–4: System architecture + AI agent design.
+- Lab 5–6: End-to-end pipeline + evaluation metrics.
 
-- Quality Improvement:
-Reproducibility 100%
-Consistency & traceability of FR extraction improved
-Feasibility and scientific rigor validated
+ Quality Improvement:
+- Reproducibility 100%
+- Consistency & traceability of FR extraction improved
+- Feasibility and scientific rigor validated
+
+### Slide 10: Thesis Completion & Future Work
+
+- Final Outcome: Fully functional AI-RES system integrated into thesis methodology.
+
+Benefits:
+- Automated FR extraction
+ - RAG-enhanced accuracy
+- Comprehensive evaluation metrics
+
+Future Work:
+- Scale to 10,000+ examples
+- Add advanced NFR extraction capabilities
