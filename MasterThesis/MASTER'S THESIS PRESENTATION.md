@@ -57,3 +57,15 @@ A hybrid RAG-LLM methodology implemented as an AI-Enabled Requirements Engineeri
 - How It Improved My Thesis- 	Chapter 4 (Metrics) & Chapter 6 (Results): Transformed the evaluation from theoretical to quantitative, providing definitive evidence.
 - Impact -	Scientific rigor increased by +50% (due to quantitative evidence); Chapter 6 (Results) is 100% complete (with Table 6.1 and Figures 6.1-6.15).
 - Metrics -	Faithfulness: 0.927; Overall Quality Score: 0.697 (Good quality tier).
+
+### Slide 9: Overall Impact of Labs 1–6
+- Integration Across Labs:
+
+Lab 1–2: Structured literature + process modeling.
+Lab 3–4: System architecture + AI agent design.
+Lab 5–6: End-to-end pipeline + evaluation metrics.
+
+- Quality Improvement:
+Reproducibility 100%
+Consistency & traceability of FR extraction improved
+Feasibility and scientific rigor validated
