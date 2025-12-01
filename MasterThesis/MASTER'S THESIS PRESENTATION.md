@@ -39,3 +39,21 @@ A hybrid RAG-LLM methodology implemented as an AI-Enabled Requirements Engineeri
 - How It Improved My - Thesis	Chapter 3 (System Architecture): Transformed an abstract methodology into a concrete, modular component architecture.
 - Impact -	System design clarity increased by +100%; UML components mapped directly to the Python class structure for implementation (e.g., VectorStoreConstructor, RAGRetriever).
 - Metrics -	Implementation roadmap: Clear component boundaries established.
+
+### SLIDE 6: Lab 04 - AI Agent & Prompt Engineering
+- What I Did -	Conceptualized the system as a single AI agent, developing Zero-shot and Few-shot prompt templates.
+- How It Improved My Thesis - 	Chapter 3.2.5 (LLM Processing) & Chapter 4 (Metrics): Provided the concrete code foundation for LLM interaction and formalized the Prompt Engineering methodology.
+- Impact -	Direct integration of prompt templates into the code base (e.g., PromptTemplates class); Metric design was formalized (Few-shot strategy guided the Faithfulness metric design).
+- Metrics - 	Reproducibility: All prompts versioned in GitHub.
+
+### SLIDE 7: Lab 05 - End-to-End Implementation (Colab)
+- What I Did -	Implemented the complete end-to-end pipeline using the Gemini API; processed an initial dataset (e.g., MedQuAD, 50 samples) with zero-shot and few-shot prompts.
+- How It Improved My Thesis -	Chapter 5 (Initial Experiment): Provided the proof-of-concept demonstration, validating the methodology's feasibility.
+- Impact	- Feasibility was proven (the system works); established baseline performance metrics (e.g., 80% well-formed FRs); outputs became the first official Output Results (Figure 8).
+- Metrics	- Processing time: 30 seconds for 50 QA pairs. Output quality: 80% well-formed FRs.
+
+### SLIDE 8: Lab 06 - Advanced Evaluation & Visualization
+- What I Did -	Implemented 5 automated RAGAS-based metrics; evaluated 65 extracted FRs; generated 15 publication-quality charts.
+- How It Improved My Thesis- 	Chapter 4 (Metrics) & Chapter 6 (Results): Transformed the evaluation from theoretical to quantitative, providing definitive evidence.
+- Impact -	Scientific rigor increased by +50% (due to quantitative evidence); Chapter 6 (Results) is 100% complete (with Table 6.1 and Figures 6.1-6.15).
+- Metrics -	Faithfulness: 0.927; Overall Quality Score: 0.697 (Good quality tier).
