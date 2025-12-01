@@ -29,7 +29,13 @@ A hybrid RAG-LLM methodology implemented as an AI-Enabled Requirements Engineeri
 - **Metrics**	- Literature coverage: +150% (from random collection to 43 categorized papers). Systematic organization: 100%.
 
 ### SLIDE 4: Lab 02 - Process Modeling & Data Understanding
-**What I Did** - Created specific (X, y) examples (Input text -> Formal Requirement) and developed the preliminary BPMN process model.
-**How It Improved My Thesis** - Chapter 3 (Methodology - Process Diagrams): BPMN diagrams provided a visual, professional standard for all process steps.
-**Impact** - Methodology clarity increased by +200% (visual vs. text-only); (X, y) examples directly informed the Experiment Design section.
-**Metrics** - Reproducibility: Enabled (clear, standard process steps).EvidenceAll BPMN diagrams (Figures 1-6), Section 5.1 (Experiment design).
+- **What I Did** - Created specific (X, y) examples (Input text -> Formal Requirement) and developed the preliminary BPMN process model.
+- **How It Improved My Thesis** - Chapter 3 (Methodology - Process Diagrams): BPMN diagrams provided a visual, professional standard for all process steps.
+- **Impact** - Methodology clarity increased by +200% (visual vs. text-only); (X, y) examples directly informed the Experiment Design section.
+- **Metrics** - Reproducibility: Enabled (clear, standard process steps).
+
+### SLIDE 5: Lab 03 - UML Design & GAI Integration
+- What I Did	- Created UML diagrams (Component, Sequence) for the AI-RES system, identifying the target market (e.g., Banking Sector).
+- How It Improved My - Thesis	Chapter 3 (System Architecture): Transformed an abstract methodology into a concrete, modular component architecture.
+- Impact -	System design clarity increased by +100%; UML components mapped directly to the Python class structure for implementation (e.g., VectorStoreConstructor, RAGRetriever).
+- Metrics -	Implementation roadmap: Clear component boundaries established.
